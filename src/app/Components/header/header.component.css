@@ -1,0 +1,14 @@
+header {
+  background: #002b5c;
+  color: white;
+}
+
+.logo-image {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar {
+  font-weight: 500;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()" class="floatBtn">
+    <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+    <mat-icon *ngIf="sidenav.opened" class="text-white">close</mat-icon>
+</button>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z10">
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-table></app-table>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
